@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String endswith</title>
+</head>
+<body>
+    <form method="GET">
+        <input type="text" placeholder="Enter a string" id="str" name="input"> <br>
+        <input type="text" placeholder="Enter the character" id = "char"> <br>
+        <input type="submit" value = "Submit" onclick="func()">
+    </form>
+<script>
+    function func(){
+        var st = document.getElementById('str').value;
+        var cha = document.getElementById('char').value;
+        var arr = st.split(" ");
+    for(var i=0; i<arr.length;i++){
+        if(arr[i][arr[i].length-1] == cha){
+            document.write("The word that ends with " + cha + " is " + arr[i] );
+        }
+    }
+}
+
+
+</script>
+</body>
+</html>
