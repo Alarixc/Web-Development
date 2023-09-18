@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="books.css"?>
+<books>
+<book>
+<title>Throne of Glass</title>
+<author>Sarah J. Mass</author>
+<publisher>Bloomsbury</publisher>
+<price>$38.95</price>
+<contentType>Fantasy</contentType>
+<format>Pdf</format>
+<isbn>0912027438</isbn>
+</book>
+<book>
+<title>Game of Thrones</title>
+<author>George R.R Martin</author>
+<publisher>Voyager Books(UK)</publisher>
+<price>$50.00</price>
+<contentType>High fantasy</contentType>
+<format>Paperback</format>
+<isbn>0890989069</isbn>
+</book>
+<book>
+<title>Heads You Win</title>
+<author>Jeffrey Archer</author>
+<publisher>Bloomsbury</publisher>
+<price>$60.00</price>
+<contentType>Fiction</contentType>
+<format>Paperback</format>
+<isbn>0999967786</isbn>
+</book>
+</books>
