@@ -1,0 +1,448 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #111;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+.mt-5 {
+    padding-top: 50px;
+}
+
+.mb-3 {
+    padding-bottom: 30px;
+}
+
+.mb-4 {
+    padding-bottom: 46px;
+}
+
+.mb-5 {
+    padding-bottom: 80px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 37px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+.img-fluid {
+    width: 100%;
+    display: block;
+}
+
+.heading {
+    font-size: 45px;
+}
+
+.row {
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+p {
+    line-height: 27px;
+}
+
+
+.bg-light {
+    background: #d9b54b;
+    padding: 30px 0px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #d9b54b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 23px;
+    padding: 14px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.banner {
+    background-attachment: fixed !important;
+    background-image: url("../imgs/backgrd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-details {
+    background: rgba(0, 0, 0, 0.69);
+    padding: 175px 0px 165px 0px;
+}
+
+.banner h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 55px;
+    text-transform: uppercase;
+    max-width: 780px;
+    line-height: 70px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.banner h2 {
+    background: #070707;
+    color: white;
+    display: inline-block;
+    padding: 7px 16px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.banner p {
+    color: white;
+    font-size: 23px;
+}
+
+
+#header {
+    padding: 12px 0px;
+    background: #e6e6e6;
+    text-align: center;
+    position: relative;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Water Brush', cursive;
+    font-size: 50px;
+    display: inline-block;
+    padding: 20px 0px 30px 0px;
+}
+
+
+.gallery img {
+    margin-bottom: 40px;
+}
+
+.col-33 {
+    width: 33.33%;
+    float: left;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+}
+
+.col-60 {
+    width: 60%;
+    float: left;
+}
+
+.col-40 {
+    width: 40%;
+    float: left;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+blockquote {
+    background: #f4f4f4;
+    padding: 15px 30px 30px 30px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #b2acac;
+    border-style: dashed;
+    line-height: 35px;
+}
+
+blockquote h2 {
+    font-family: 'Adobe Gothic Std';
+}
+
+.title {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+.table1 p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.table1 h4 {
+    margin-top: 0px;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table1 h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.table1 td {
+    border: 5px solid #fff;
+    padding: 20px;
+}
+
+.table1 h3 {
+    font-size: 17px;
+    color: #555;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.table1 tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+
+.custom-hr {
+    max-width: 1000px;
+    margin: auto;
+    border-top: 1px solid #e2e2e2;
+}
+
+.img-fluid {
+    width: 100%;
+    display: block;
+}
+
+.menubar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menubar ul li {
+    display: inline-block;
+}
+
+
+.menubar ul a {
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#header a.current {
+    background: #d9b54b;
+    color: white;
+}
+
+.w-100 {
+    max-width: 100% !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.menubar ul a:hover {
+    color: #333;
+}
+
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form {
+    background: #e6e6e6;
+    padding: 30px;
+    border: 1px solid #888;
+}
+
+figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    
+}
+
+figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+.pl-5 {
+    padding-left: 25px;
+}
+
+.contact-us {
+    width: 100%;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.myinput {
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+.textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+
+.food-table td {
+    border: none;
+}
+
+.food-table td {
+    background: #fff;
+}
+
+.food-table tr {
+    background: #fff;
+}
+
+.food-table td:hover {
+    background: #fff;
+}
+
+
+.food-table img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+
+.food-table img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+footer {
+    padding-top: 34px;
+    padding-bottom: 21px;
+    background: #111;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+footer ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer img {
+    width: 40px;
+}
