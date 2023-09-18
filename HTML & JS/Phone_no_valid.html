@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number valid or not</title>
+</head>
+<body>
+    <form method="GET">
+        Phone: <br>
+        <input type="text" placeholder="Enter your phone no" id="phone"> <br>
+        <input type="submit" value="Submit" onclick = "func()">
+    </form>
+    <script>
+        function func(){
+            var num = document.getElementById("phone").value;	
+			let numBool = !(isNaN(num) || num<999999999 || num>10000000000);
+            if(numBool){
+                document.write("Number is valid");
+            }else{
+                document.write("Number is invalid");
+            }
+        }
+    </script>
+</body>
+</html>
