@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB4_20BAI1154</title>
+</head>
+
+    <body>
+        <script>
+          const customer_id = prompt("Enter your customer id: ");
+          const data = prompt("Enter your data usage in MB: ");
+          var charge = 0;
+          if (data <= 240) {
+            charge = 35;
+          } else if (data <= 1000) {
+            if (data > 300) {
+              charge = 140 + 0.3 * (data - 300);
+            } else {
+              charge = 140;
+            }
+          } else if (data <= 2000) {
+            if (data > 1600) {
+              charge = 240 + 0.5 * (data - 1600);
+            } else {
+              charge = 240;
+            }
+          } else {
+            if (data > 2900) {
+              charge = 790 + 0.3 * (data - 2900);
+            } else {
+              charge = 790;
+            }
+          }
+          document.write(
+            "The charges for usage of " +
+              data +
+              "MB with customer id " +
+              customer_id +
+              " is: Rs. " +
+              charge
+          );
+        </script>
+      </body>
+    </html>
+    
+    
