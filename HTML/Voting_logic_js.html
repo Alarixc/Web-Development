@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballot number</title>
+</head>
+<body>
+    <script>
+        var i; 
+        var count= [0,0,0,0,0,0];
+        var ch;
+        var ballot = prompt("Enter the ballot number:");
+        
+            if (ballot==1){
+                count[1]++;
+            }else if(ballot==2){
+                count[2]++;
+            }else if(ballot==3){
+                count[3]++;
+            }else if(ballot==4){
+                count[4]++;
+            }else if(ballot==5){
+                count[5]++;
+            }else{
+                count[0]++;
+            }
+            var vote_twice = count[0] + count[1] + count[2] + count[3] + count[4] + count[5];
+
+        f
+        var vote_again= prompt("Do you want to vote again?");
+       
+        
+        while(vote_again=='y'){
+            var ballot = prompt("Enter the ballot number:");
+        
+        if (ballot==1){
+            count[1]++;
+        }else if(ballot==2){
+            count[2]++;
+        }else if(ballot==3){
+            count[3]++;
+        }else if(ballot==4){
+            count[4]++;
+        }else if(ballot==5){
+            count[5]++;
+        }else{
+            count[0]++;
+        }
+           
+            var vote_again= prompt("Do you want to vote again?");
+        }
+
+        for(var x=1; x<=5; x++){
+            document.write("Votes for Candidate " + x + " are " + count[x]);
+            document.write("<br/>");
+            
+        }
+        document.write("Spoilt ballots are " + count[0]);
+
+
+    </script>
+</body>
+</html>
