@@ -13,7 +13,7 @@ Our webpage has the following modules:
  a) Use JavaScript to check if the login cookie has been set.
  b) Displaying old complaints
   i) Get the data from MySQL and display using php if any past complaints 
-from user is present
+     from user is present
  c) Raising a complaint
   i) Get the form using php and validate the form.
   ii) If it’s a valid input, insert the complaint in the database.
