@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>	
+		<form method="POST">
+			Name:
+			<input type="text" id="Name">
+			<br><br>
+			Phone:
+			<input type="number" id="Number">
+			<br><br>
+			<button type="button" onclick="Func()">Submit</button>
+		</form>
+		
+		<br>
+		Validity:
+		<p id="output">No Input Given By User</p>
+		
+		<script>
+			function Func()
+			{
+				var name = document.getElementById("Name").value;
+				var num = document.getElementById("Number").value;
+				
+				let numBool = !(isNaN(num) || num<999999999 || num>10000000000);
+				let nameBool = (/^[a-z A-Z]+[a-zA-Z]$/.test(name));
+				let text;
+				
+				if(numBool && nameBool)
+				{
+					document.getElementById("output").innerHTML = "True";
+				}
+				else
+				{
+					document.getElementById("output").innerHTML="False";
+				}
+				
+			}
+		</script>
+    </p>
+	
+	</body>
+</html>
+
+
